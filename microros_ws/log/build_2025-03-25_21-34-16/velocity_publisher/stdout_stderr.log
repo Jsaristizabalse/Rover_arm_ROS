@@ -1,0 +1,38 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Configuring done (1.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/aristizabal/microros_ws/build/velocity_publisher
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_client.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_service.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/robot_control_cmd_vel.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//launch/brazo_rover_control.launch.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/robot_control_cmd_vel.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/move_robot_service.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/brazo_rover_control.launch.py
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/package_run_dependencies/velocity_publisher
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/parent_prefix_path/velocity_publisher
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.sh
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.dsv
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.sh
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.dsv
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.bash
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.sh
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.zsh
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.dsv
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.dsv
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/packages/velocity_publisher
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig.cmake
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig-version.cmake
+-- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.xml

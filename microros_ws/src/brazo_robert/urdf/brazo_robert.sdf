@@ -1,0 +1,397 @@
+<sdf version='1.11'>
+  <model name='brazo_robert'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 0 0.14999999999999999 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0.14999999999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.5</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0.14999999999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.5</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0 0 1 1</diffuse>
+          <ambient>0 0 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='segmento1_joint' type='revolute'>
+      <pose relative_to='base_link'>0 0 0.29999999999999999 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>segmento1_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1.5700000000000001</lower>
+          <upper>1.5700000000000001</upper>
+          <effort>100</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='segmento1_link'>
+      <pose relative_to='segmento1_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='segmento1_link_collision'>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.20000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='segmento1_link_visual'>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.20000000000000001</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='segmento2_joint' type='revolute'>
+      <pose relative_to='segmento1_link'>0 0 0.20000000000000001 0 0 0</pose>
+      <parent>segmento1_link</parent>
+      <child>segmento2_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5700000000000001</lower>
+          <upper>1.5700000000000001</upper>
+          <effort>100</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='segmento2_link'>
+      <pose relative_to='segmento2_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.34999999999999998 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='segmento2_link_collision'>
+        <pose>0 0 0.34999999999999998 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.69999999999999996</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='segmento2_link_visual'>
+        <pose>0 0 0.34999999999999998 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.69999999999999996</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='segmento3_joint' type='revolute'>
+      <pose relative_to='segmento2_link'>0 0 0.69999999999999996 0 0 0</pose>
+      <parent>segmento2_link</parent>
+      <child>segmento3_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5700000000000001</lower>
+          <upper>1.5700000000000001</upper>
+          <effort>100</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='segmento3_link'>
+      <pose relative_to='segmento3_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='segmento3_link_collision'>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.20000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='segmento3_link_visual'>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.20000000000000001</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='segmento4_rot' type='revolute'>
+      <pose relative_to='segmento3_link'>0 0 0.20000000000000001 0 0 0</pose>
+      <parent>segmento3_link</parent>
+      <child>segmento4_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='segmento4_link'>
+      <pose relative_to='segmento4_rot'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.20000000000000001 0 0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='segmento4_link_collision'>
+        <pose>0 0 0.20000000000000001 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.40000000000000002</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='segmento4_link_visual'>
+        <pose>0 0 0.20000000000000001 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.40000000000000002</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>1 1 0 1</diffuse>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='segmento5_joint' type='revolute'>
+      <pose relative_to='segmento4_link'>0 0 0.40000000000000002 0 0 0</pose>
+      <parent>segmento4_link</parent>
+      <child>segmento5_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5700000000000001</lower>
+          <upper>1.5700000000000001</upper>
+          <effort>100</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='segmento5_link'>
+      <pose relative_to='segmento5_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='segmento5_link_collision'>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.20000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='segmento5_link_visual'>
+        <pose>0 0 0.10000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.10000000000000001 0.10000000000000001 0.20000000000000001</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='gripper_left_joint' type='prismatic'>
+      <pose relative_to='segmento5_link'>0 0.050000000000000003 0.20000000000000001 0 0 0</pose>
+      <parent>segmento5_link</parent>
+      <child>gripper_left</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.050000000000000003</upper>
+          <effort>10</effort>
+          <velocity>0.10000000000000001</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='gripper_left'>
+      <pose relative_to='gripper_left_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name='gripper_left_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.25 0.25 1</diffuse>
+          <ambient>0.25 0.25 0.25 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='gripper_right_joint' type='prismatic'>
+      <pose relative_to='segmento5_link'>0 -0.050000000000000003 0.20000000000000001 0 0 0</pose>
+      <parent>segmento5_link</parent>
+      <child>gripper_right</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.050000000000000003</upper>
+          <effort>10</effort>
+          <velocity>0.10000000000000001</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='gripper_right'>
+      <pose relative_to='gripper_right_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name='gripper_right_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.25 0.25 1</diffuse>
+          <ambient>0.25 0.25 0.25 1</ambient>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

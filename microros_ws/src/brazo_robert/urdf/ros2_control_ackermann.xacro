@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot name="RobertUN" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+        </hardware>
+
+
+        
+
+        <joint name="segmento1_joint">
+            <command_interface name="position">
+                <param name="min">-1</param>
+                <param name="max">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="segmento2_joint">
+            <command_interface name="position">
+                <param name="min">-1</param>
+                <param name="max">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="segmento3_joint">
+            <command_interface name="position">
+                <param name="min">-1</param>
+                <param name="max">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="segmento4_rot">
+            <command_interface name="position">
+                <param name="min">-1</param>
+                <param name="max">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+
+                <joint name="segmento5_joint">
+            <command_interface name="position">
+                <param name="min">-1</param>
+                <param name="max">1</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+    </ros2_control>
+
+    <gazebo>
+        <plugin filename="gz-sim-joint-state-publisher-system"
+            name="gz::sim::systems::JointStatePublisher">
+            <topic>joint_states</topic>
+            <update_rate>50</update_rate>
+
+
+            <joint_name>segmento1_joint</joint_name>
+            <joint_name>segmento2_joint</joint_name>
+
+            
+
+            <joint_name>segmento3_joint</joint_name>
+            <joint_name>segmento4_rot</joint_name>
+            <joint_name>segmento5_joint</joint_name>
+
+
+        </plugin>    
+    </gazebo>
+
+
+    <gazebo>
+        <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin" >
+            <parameters>$(find brazo_robert)/config/brazo_controller.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>

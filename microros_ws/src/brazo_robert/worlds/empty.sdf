@@ -1,0 +1,138 @@
+<sdf version="1.6">
+  <world name="empty">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-contact-system"
+      name="gz::sim::systems::Contact">
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name='ground_collision'>
+            <geometry>
+                <plane>
+                    <normal>0 0 1</normal>
+                    <size>100 100</size>
+                </plane>
+            </geometry>
+            <surface>
+                <friction>
+                    <ode/>
+                </friction>
+                <bounce>
+                    <restitution_coefficient>0.9</restitution_coefficient> 
+                    <threshold>0.01</threshold>
+                </bounce>
+                <contact>
+                    <soft_cfm>0.00001</soft_cfm>
+                    <soft_erp>0.9</soft_erp>
+                </contact>
+            </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='tennis_ball'>
+      <pose>1.0 0 1 0 0 0</pose>
+      <link name='tennis_ball_link'>
+          <inertial>
+              <mass>0.057</mass>
+              <inertia>
+                  <ixx>0.00002</ixx>
+                  <ixy>0</ixy>
+                  <ixz>0</ixz>
+                  <iyy>0.00002</iyy>
+                  <iyz>0</iyz>
+                  <izz>0.00002</izz>
+              </inertia>
+          </inertial>
+          <collision name='tennis_ball_collision'>
+              <geometry>
+                  <sphere>
+                      <radius>0.033</radius>
+                  </sphere>
+              </geometry>
+              <surface>
+                  <friction>
+                      <ode>
+                          <mu>0.35</mu> 
+                          <mu2>0.35</mu2> 
+                      </ode>
+                  </friction>
+                  <bounce>
+                      <restitution_coefficient>0.8</restitution_coefficient> <!-- Rebote casi completo -->
+                      <threshold>0.001</threshold> <!-- Se activa a velocidades muy bajas -->
+                  </bounce>
+                  <contact>
+                      <soft_cfm>0.00001</soft_cfm> <!-- Simula un material más sólido -->
+                      <soft_erp>0.85</soft_erp> <!-- Permite recuperar casi toda la energía del impacto -->
+                  </contact>
+              </surface>
+          </collision>
+          <visual name='tennis_ball_visual'>
+              <geometry>
+                  <sphere>
+                      <radius>0.033</radius>
+                  </sphere>
+              </geometry>
+              <material>
+                  <ambient>0.8 0.8 0.0 1</ambient>
+                  <diffuse>1.0 1.0 0.0 1</diffuse>
+                  <specular>0.5 0.5 0.5 1</specular>
+              </material>
+          </visual>
+      </link>
+      <static>false</static>
+      <self_collide>false</self_collide>
+  </model>
+
+  </world>
+</sdf>

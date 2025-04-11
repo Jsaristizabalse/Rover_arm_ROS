@@ -1,0 +1,34 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+
+#con esto controlamos la posicion
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+
+##esto es para publicar los joints
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+
+#
+
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - segmento1_joint
+      - segmento2_joint
+      - segmento3_joint
+      - segmento4_rot
+      - segmento5_joint
+      
+    interface_name: position
+    command_interfaces:
+      - position
+
+
+    #estas variables no se controlan; sino que se leen
+    state_interfaces:
+      - position
+      - velocity

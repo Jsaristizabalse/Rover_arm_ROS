@@ -1,0 +1,14 @@
+pointcloud_to_laserscan:
+  ros__parameters:
+    min_height: 0.1  # Ajusta según la altura mínima de los puntos relevantes
+    max_height: 0.5  # Ajusta según la altura máxima de los puntos relevantes
+    angle_min: -1.57  # Ángulo mínimo en radianes (ajustar según necesidades)
+    angle_max: 1.57   # Ángulo máximo en radianes (ajustar según necesidades)
+    angle_increment: 0.017  # Resolución del láser (π/180 rad)
+    queue_size: 10
+    scan_time: 0.033
+    range_min: 0.1
+    range_max: 5.0
+    target_frame: "base_link"  # Asegúrate de que sea el frame correcto
+    transform_tolerance: 0.01
+    use_inf: true

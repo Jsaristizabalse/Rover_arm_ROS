@@ -1,0 +1,9 @@
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/uninstall.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/velocity_publisher_uninstall.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/test.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/edit_cache.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/rebuild_cache.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/list_install_components.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/install.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/install/local.dir
+/home/aristizabal/microros_ws/build/velocity_publisher/CMakeFiles/install/strip.dir

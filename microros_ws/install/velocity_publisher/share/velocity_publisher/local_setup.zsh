@@ -1,0 +1,1 @@
+/home/aristizabal/microros_ws/build/velocity_publisher/ament_cmake_environment_hooks/local_setup.zsh

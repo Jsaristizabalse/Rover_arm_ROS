@@ -1,0 +1,9 @@
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/uninstall.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/brazo_robert_uninstall.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/test.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/edit_cache.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/rebuild_cache.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/list_install_components.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/install.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/install/local.dir
+/home/aristizabal/microros_ws/build/brazo_robert/CMakeFiles/install/strip.dir

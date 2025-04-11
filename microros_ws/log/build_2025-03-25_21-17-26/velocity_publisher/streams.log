@@ -1,0 +1,59 @@
+[0.021s] Invoking command in '/home/aristizabal/microros_ws/build/velocity_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aristizabal/microros_ws/src/velocity_publisher -DCMAKE_INSTALL_PREFIX=/home/aristizabal/microros_ws/install/velocity_publisher
+[0.186s] -- The C compiler identification is GNU 13.3.0
+[0.381s] -- The CXX compiler identification is GNU 13.3.0
+[0.437s] -- Detecting C compiler ABI info
+[0.629s] -- Detecting C compiler ABI info - done
+[0.650s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.651s] -- Detecting C compile features
+[0.652s] -- Detecting C compile features - done
+[0.679s] -- Detecting CXX compiler ABI info
+[0.884s] -- Detecting CXX compiler ABI info - done
+[0.907s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.908s] -- Detecting CXX compile features
+[0.909s] -- Detecting CXX compile features - done
+[0.923s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.170s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.402s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.512s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.547s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.585s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.623s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.779s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.786s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.997s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.036s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.078s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.219s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.426s] -- Configuring done (2.4s)
+[2.434s] -- Generating done (0.0s)
+[2.438s] -- Build files have been written to: /home/aristizabal/microros_ws/build/velocity_publisher
+[2.457s] Invoked command in '/home/aristizabal/microros_ws/build/velocity_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aristizabal/microros_ws/src/velocity_publisher -DCMAKE_INSTALL_PREFIX=/home/aristizabal/microros_ws/install/velocity_publisher
+[2.462s] Invoking command in '/home/aristizabal/microros_ws/build/velocity_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aristizabal/microros_ws/build/velocity_publisher -- -j8 -l8
+[2.548s] Invoked command in '/home/aristizabal/microros_ws/build/velocity_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aristizabal/microros_ws/build/velocity_publisher -- -j8 -l8
+[2.570s] Invoking command in '/home/aristizabal/microros_ws/build/velocity_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aristizabal/microros_ws/build/velocity_publisher
+[2.582s] -- Install configuration: ""
+[2.583s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts
+[2.583s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_service.py
+[2.583s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_client.py
+[2.584s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/robot_control_cmd_vel.py
+[2.584s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//launch
+[2.584s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//launch/brazo_rover_control.launch.py
+[2.584s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/robot_control_cmd_vel.py
+[2.584s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/move_robot_service.py
+[2.585s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/brazo_rover_control.launch.py
+[2.585s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/package_run_dependencies/velocity_publisher
+[2.585s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/parent_prefix_path/velocity_publisher
+[2.585s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.sh
+[2.585s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.dsv
+[2.586s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.sh
+[2.586s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.dsv
+[2.586s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.bash
+[2.586s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.sh
+[2.586s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.zsh
+[2.586s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.dsv
+[2.587s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.dsv
+[2.587s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/packages/velocity_publisher
+[2.587s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig.cmake
+[2.587s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig-version.cmake
+[2.587s] -- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.xml
+[2.591s] Invoked command in '/home/aristizabal/microros_ws/build/velocity_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aristizabal/microros_ws/build/velocity_publisher

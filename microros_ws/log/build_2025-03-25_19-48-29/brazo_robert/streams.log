@@ -1,0 +1,59 @@
+[0.051s] Invoking command in '/home/aristizabal/microros_ws/build/brazo_robert': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aristizabal/microros_ws/src/brazo_robert -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aristizabal/microros_ws/install/brazo_robert
+[0.354s] -- The C compiler identification is GNU 13.3.0
+[0.628s] -- The CXX compiler identification is GNU 13.3.0
+[0.721s] -- Detecting C compiler ABI info
+[1.242s] -- Detecting C compiler ABI info - done
+[1.297s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.298s] -- Detecting C compile features
+[1.300s] -- Detecting C compile features - done
+[1.360s] -- Detecting CXX compiler ABI info
+[1.904s] -- Detecting CXX compiler ABI info - done
+[1.957s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.958s] -- Detecting CXX compile features
+[1.960s] -- Detecting CXX compile features - done
+[1.984s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.620s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.922s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.103s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.516s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.516s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.521s] -- Added test 'lint_cmake' to check CMake code style
+[3.526s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.535s] -- Added test 'xmllint' to check XML markup files
+[3.543s] -- Configuring done (3.4s)
+[3.556s] -- Generating done (0.0s)
+[3.562s] -- Build files have been written to: /home/aristizabal/microros_ws/build/brazo_robert
+[3.581s] Invoked command in '/home/aristizabal/microros_ws/build/brazo_robert' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aristizabal/microros_ws/src/brazo_robert -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aristizabal/microros_ws/install/brazo_robert
+[3.587s] Invoking command in '/home/aristizabal/microros_ws/build/brazo_robert': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aristizabal/microros_ws/build/brazo_robert -- -j8 -l8
+[3.755s] Invoked command in '/home/aristizabal/microros_ws/build/brazo_robert' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aristizabal/microros_ws/build/brazo_robert -- -j8 -l8
+[3.800s] Invoking command in '/home/aristizabal/microros_ws/build/brazo_robert': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aristizabal/microros_ws/build/brazo_robert
+[3.827s] -- Install configuration: ""
+[3.828s] -- Execute custom install script
+[3.831s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.sdf
+[3.872s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.urdf
+[3.911s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.urdf.xacro
+[3.956s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.xacro
+[4.005s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/launch/brazo.launch.py
+[4.045s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/launch/brazo_robert.launch.py
+[4.085s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/launch/brazo_robert_gazebo.launch.py
+[4.125s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/rviz/rviz_configRobertUN.rviz
+[4.162s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/empty.sdf
+[4.208s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/fws_robot_world.sdf
+[4.251s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/moon.sdf
+[4.286s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/test_world.world
+[4.325s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/ament_index/resource_index/package_run_dependencies/brazo_robert
+[4.359s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/ament_index/resource_index/parent_prefix_path/brazo_robert
+[4.402s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/ament_prefix_path.sh
+[4.437s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/ament_prefix_path.dsv
+[4.472s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/path.sh
+[4.506s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/path.dsv
+[4.551s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.bash
+[4.584s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.sh
+[4.622s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.zsh
+[4.662s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.dsv
+[4.696s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/package.dsv
+[4.739s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/ament_index/resource_index/packages/brazo_robert
+[4.774s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/cmake/brazo_robertConfig.cmake
+[4.814s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/cmake/brazo_robertConfig-version.cmake
+[4.849s] -- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/package.xml
+[4.895s] Invoked command in '/home/aristizabal/microros_ws/build/brazo_robert' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aristizabal/microros_ws/build/brazo_robert

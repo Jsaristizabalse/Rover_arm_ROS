@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<robot name="brazo_robert" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Definición de parámetros -->
+  <xacro:property name="base_radius" value="0.5"/>
+  <xacro:property name="base_length" value="0.3"/>
+  <xacro:property name="link_width" value="0.1"/>
+  
+  <!-- Longitudes personalizadas para cada segmento -->
+  <xacro:property name="segmento1_height" value="0.2"/>
+  <xacro:property name="segmento2_height" value="0.7"/>
+  <xacro:property name="segmento3_height" value="0.2"/>
+  <xacro:property name="segmento4_height" value="0.4"/>
+  <xacro:property name="segmento5_height" value="0.2"/>
+  <xacro:property name="joint_offset" value="0.3"/>
+  
+
+  <!-- Base del brazo -->
+  <link name="base_link">
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 ${base_length / 2}"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.01" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+    <collision>
+          <origin xyz="0 0 ${base_length / 2}"/>
+      <geometry>
+        <cylinder length="${base_length}" radius="${base_radius}"/>
+      </geometry>
+    </collision>
+    <visual>
+          <origin xyz="0 0 ${base_length / 2}"/>
+      <geometry>
+        <cylinder length="${base_length}" radius="${base_radius}"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 0.8 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Macro para los eslabones con altura personalizada -->
+  <xacro:macro name="eje" params="eje_name parent_link axis rpy color height joint_z">
+    <link name="${eje_name}_link">
+      <inertial>
+        <mass value="1.0"/>
+        <origin xyz="0 0 ${height/2}"/>
+        <inertia ixx="0.01" iyy="0.01" izz="0.01" ixy="0" ixz="0" iyz="0"/>
+      </inertial>
+      <collision>
+      <origin xyz="0 0 ${height / 2}"/>  <!-- 🔹 Mueve el cubo hacia arriba -->
+        <geometry>
+          <box size="${link_width} ${link_width} ${height}"/>
+        </geometry>
+      </collision>
+      <visual>
+       <origin xyz="0 0 ${height / 2}"/>  <!-- 🔹 Mueve el cubo hacia arriba -->
+        <geometry>
+          <box size="${link_width} ${link_width} ${height}"/>
+        </geometry>
+        <material name="${color}">
+          <color rgba="${color}"/>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="${eje_name}_joint" type="revolute">
+      <parent link="${parent_link}"/>
+      <child link="${eje_name}_link"/>
+      <origin xyz="0 0 ${joint_z}" rpy="${rpy}"/>
+      <axis xyz="${axis}"/>
+      <limit effort="100.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Eslabones del brazo con alturas personalizadas -->
+<xacro:eje eje_name="segmento1" parent_link="base_link" axis="0 0 1" rpy="0 0 0"
+           color="0.8 0 0 1" height="${segmento1_height}" joint_z="${base_length}"/>
+
+
+<xacro:eje eje_name="segmento2" parent_link="segmento1_link" axis="0 1 0" rpy="0 0 0" color="0 0.8 0 1" height="${segmento2_height}" joint_z="${segmento1_height}"/>
+
+<xacro:eje eje_name="segmento3" parent_link="segmento2_link" axis="0 1 0" rpy="0 0 0" color="0 0.8 0 1" height="${segmento3_height}" joint_z="${segmento2_height}"/>
+
+<xacro:macro name="eje_cilindrico" params="eje_name parent_link axis rpy color radius length joint_z">
+    <link name="${eje_name}_link">
+      <inertial>
+        <mass value="0.5"/>
+        <origin xyz="0 0 ${length / 2}"/>
+        <inertia ixx="0.01" iyy="0.01" izz="0.01" ixy="0" ixz="0" iyz="0"/>
+      </inertial>
+      <collision>
+        <origin xyz="0 0 ${length / 2}"/>
+        <geometry>
+          <cylinder radius="${radius}" length="${length}"/>
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0 ${length / 2}"/>
+        <geometry>
+          <cylinder radius="${radius}" length="${length}"/>
+        </geometry>
+        <material name="${color}">
+          <color rgba="${color}"/>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="${eje_name}_rot" type="revolute"> <!-- 🔹 Tipo revolute para rotación infinita -->
+      <parent link="${parent_link}"/>
+      <child link="${eje_name}_link"/>
+      <origin xyz="0 0 ${joint_z}" rpy="${rpy}"/>
+      <axis xyz="${axis}"/>
+      <limit effort="100.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    </joint>
+</xacro:macro>
+
+<xacro:eje_cilindrico eje_name="segmento4" parent_link="segmento3_link" axis="0 0 1" 
+                      rpy="0 0 0" color="0.8 0.8 0 1" radius="0.05" length="${segmento4_height}" 
+                      joint_z="${segmento3_height}"/>
+                      
+                      
+<xacro:eje eje_name="segmento5" parent_link="segmento4_link" axis="0 1 0" rpy="0 0 0" color="0 0.8 0 1" height="${segmento5_height}" joint_z="${segmento4_height}"/>
+
+
+ <!-- Gripper izquierdo -->
+<joint name="gripper_left_joint" type="prismatic">
+  <parent link="segmento5_link"/>
+  <child link="gripper_left"/>
+  <origin xyz="0 0.05 ${segmento5_height}"/>
+  <axis xyz="0 1 0"/>
+  <limit effort="10.0" lower="0.0" upper="0.05" velocity="0.1"/>
+</joint>
+
+<link name="gripper_left">
+  <inertial>
+    <mass value="0.1"/>
+    <origin xyz="0 0 0"/>
+    <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/>
+  </inertial>
+  <visual>
+    <geometry>
+      <cylinder radius="0.05" length="0.2"/>
+    </geometry>
+    <material name="black">
+      <color rgba="0.2 0.2 0.2 1"/>
+    </material>
+  </visual>
+</link>
+
+<!-- Gripper derecho -->
+<joint name="gripper_right_joint" type="prismatic">
+  <parent link="segmento5_link"/>
+  <child link="gripper_right"/>
+  <origin xyz="0 -0.05 ${segmento5_height}"/>
+  <axis xyz="0 -1 0"/>  <!-- Se mueve en dirección opuesta -->
+  <limit effort="10.0" lower="0.0" upper="0.05" velocity="0.1"/>
+</joint>
+
+<link name="gripper_right">
+  <inertial>
+    <mass value="0.1"/>
+    <origin xyz="0 0 0"/>
+    <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/>
+  </inertial>
+  <visual>
+    <geometry>
+      <cylinder radius="0.05" length="0.2"/>
+    </geometry>
+    <material name="black">
+      <color rgba="0.2 0.2 0.2 1"/>
+    </material>
+  </visual>
+</link>
+
+<xacro:include filename="ros2_control_ackermann.xacro" /> <!-- Control Ackermann -->
+
+</robot>

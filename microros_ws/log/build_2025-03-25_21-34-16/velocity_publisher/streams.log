@@ -1,0 +1,44 @@
+[0.071s] Invoking command in '/home/aristizabal/microros_ws/build/velocity_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aristizabal/microros_ws/src/velocity_publisher -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aristizabal/microros_ws/install/velocity_publisher
+[0.156s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.745s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.775s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.857s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.882s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.921s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.962s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.142s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.146s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.326s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.508s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.880s] -- Configuring done (1.8s)
+[1.892s] -- Generating done (0.0s)
+[1.898s] -- Build files have been written to: /home/aristizabal/microros_ws/build/velocity_publisher
+[1.928s] Invoked command in '/home/aristizabal/microros_ws/build/velocity_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aristizabal/microros_ws/src/velocity_publisher -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aristizabal/microros_ws/install/velocity_publisher
+[1.932s] Invoking command in '/home/aristizabal/microros_ws/build/velocity_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aristizabal/microros_ws/build/velocity_publisher -- -j8 -l8
+[2.058s] Invoked command in '/home/aristizabal/microros_ws/build/velocity_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aristizabal/microros_ws/build/velocity_publisher -- -j8 -l8
+[2.084s] Invoking command in '/home/aristizabal/microros_ws/build/velocity_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aristizabal/microros_ws/build/velocity_publisher
+[2.113s] -- Install configuration: ""
+[2.114s] -- Execute custom install script
+[2.115s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_client.py
+[2.144s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_service.py
+[2.172s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/robot_control_cmd_vel.py
+[2.201s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//launch/brazo_rover_control.launch.py
+[2.235s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/robot_control_cmd_vel.py
+[2.259s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/move_robot_service.py
+[2.283s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/brazo_rover_control.launch.py
+[2.314s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/package_run_dependencies/velocity_publisher
+[2.343s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/parent_prefix_path/velocity_publisher
+[2.372s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.sh
+[2.397s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.dsv
+[2.430s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.sh
+[2.461s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.dsv
+[2.488s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.bash
+[2.522s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.sh
+[2.548s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.zsh
+[2.574s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.dsv
+[2.602s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.dsv
+[2.632s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/packages/velocity_publisher
+[2.661s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig.cmake
+[2.686s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig-version.cmake
+[2.720s] -- Symlinking: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.xml
+[2.751s] Invoked command in '/home/aristizabal/microros_ws/build/velocity_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aristizabal/microros_ws/build/velocity_publisher

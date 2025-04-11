@@ -1,0 +1,48 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/aristizabal/microros_ws/build/brazo_robert
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.sdf
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.urdf
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.urdf.xacro
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/urdf/brazo_robert.xacro
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/launch/brazo.launch.py
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/launch/brazo_robert.launch.py
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/launch/brazo_robert_gazebo.launch.py
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/rviz/rviz_configRobertUN.rviz
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/empty.sdf
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/fws_robot_world.sdf
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/moon.sdf
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/worlds/test_world.world
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/ackerman_drive_controller.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/gazebo_bridge.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/gz_bridge.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/joystick.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/mapper_params_online_async.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/my_controllers.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/pointCloudToLaserScan.yaml
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/config/twist_mux.yaml
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/ament_index/resource_index/package_run_dependencies/brazo_robert
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/ament_index/resource_index/parent_prefix_path/brazo_robert
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/path.sh
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/environment/path.dsv
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.bash
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.sh
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.zsh
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/local_setup.dsv
+-- Symlinking: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/package.dsv
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/ament_index/resource_index/packages/brazo_robert
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/cmake/brazo_robertConfig.cmake
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/cmake/brazo_robertConfig-version.cmake
+-- Up-to-date symlink: /home/aristizabal/microros_ws/install/brazo_robert/share/brazo_robert/package.xml

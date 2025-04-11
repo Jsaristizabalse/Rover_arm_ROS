@@ -1,0 +1,53 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Configuring done (2.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/aristizabal/microros_ws/build/velocity_publisher
+-- Install configuration: ""
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_service.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/move_robot_client.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//scripts/robot_control_cmd_vel.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//launch
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher//launch/brazo_rover_control.launch.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/robot_control_cmd_vel.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/move_robot_service.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/lib/velocity_publisher/brazo_rover_control.launch.py
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/package_run_dependencies/velocity_publisher
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/parent_prefix_path/velocity_publisher
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.sh
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/ament_prefix_path.dsv
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.sh
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/environment/path.dsv
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.bash
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.sh
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.zsh
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/local_setup.dsv
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.dsv
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/ament_index/resource_index/packages/velocity_publisher
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig.cmake
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/cmake/velocity_publisherConfig-version.cmake
+-- Installing: /home/aristizabal/microros_ws/install/velocity_publisher/share/velocity_publisher/package.xml
